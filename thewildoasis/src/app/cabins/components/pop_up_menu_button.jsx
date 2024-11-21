@@ -47,15 +47,15 @@ export default function PopUpMenuButton({}) {
           />
         </svg>
         {open == true ? (
-          <div className="z-10 absolute right-3 flex flex-col items-start justify-start border border-grey-200 bg-white rounded">
+          <div className="z-10 absolute right-2 flex flex-col items-start justify-start border border-grey-200 bg-white rounded">
             <li className="w-full hover:bg-gray-200 px-2  py-1 flex self-start items-center" onClick={()=>console.log("Duplicate")}>
-              <HiDuplicate /> <p className="ml-1">Duplicate</p>
+               <p className="ml-1">Duplicate</p>
             </li>
             <li className="w-full hover:bg-gray-200 px-2  py-1 flex self-start items-center" onClick={()=>console.log("Edit ")}>
-              <MdModeEditOutline /> <p className="ml-1" >Edit</p>
+               <p className="ml-1" >Edit</p>
             </li>
             <li className="w-full hover:bg-gray-200 px-2  py-1 flex self-start items-center" onClick={()=>console.log("Delete")}>
-              <MdDelete />
+              
               <p className="ml-1">Delete</p>
             </li>
           </div>
